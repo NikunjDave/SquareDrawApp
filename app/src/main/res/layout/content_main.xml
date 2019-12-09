@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <!-- custom draw view -->
+
+        <com.nikiaitestapp.custom.SquareView
+                android:id="@+id/squareDrawView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+        >
+
+        </com.nikiaitestapp.custom.SquareView>
+
+        <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+        />
+
+        <!-- footer buttons-->
+        <LinearLayout
+                android:id="@+id/llFooters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:background="@color/colorPrimary"
+        >
+
+
+            <Button
+                    android:id="@+id/reset"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reset"
+                    android:onClick="performClick"
+                    android:textColor="@android:color/white"
+                    android:background="?attr/selectableItemBackground"
+            />
+
+
+            <Button
+                    android:id="@+id/coords"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:onClick="performClick"
+                    android:text="@string/show_coordinates"
+                    android:textColor="@android:color/white"
+                    android:background="?attr/selectableItemBackground"
+            />
+
+            <Button
+                    android:id="@+id/scale"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/slider"
+                    android:onClick="performClick"
+                    android:textColor="@android:color/white"
+                    android:background="?attr/selectableItemBackground"
+            />
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NikiAiTestApp</string>
+    <string name="reset">RESET</string>
+    <string name="show_coordinates">Co-ordinates</string>
+    <string name="square_coordinates">Square Coordinates</string>
+    <string name="close">Close</string>
+    <string name="slider">Slider</string>
+</resources>
